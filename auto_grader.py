@@ -5,11 +5,23 @@ Runs the tests on the results json file.
 
 import argparse
 import json
+import re
 
 def get_args():
     parser = argparse.ArgumentParser(description='Language Modeling')
     parser.add_argument('test', type=str, help='The test to perform.')
     return parser.parse_args()
+
+def test_link():
+    # Read link
+    link_file = "notebook_link.txt"
+    with open(link_file, 'r') as f:
+        link = f.read().strip()
+    
+    # Make sure link contains usp=sharing
+    if "usp=sharing" not in link:
+        return f"Link {link} doesn't seem to have share access"
+    
 
 def test_preprocess(results):
     if results["vocab_length"] != 1804:
@@ -93,6 +105,8 @@ def main():
 
     # Switch between the tests
     match args.test:
+        case 'test_link':
+            result = test_link()
         case 'test_preprocess':
             result = test_preprocess(results["test_preprocess"])
         case 'test_lm':

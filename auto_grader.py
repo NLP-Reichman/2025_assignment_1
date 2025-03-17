@@ -32,10 +32,10 @@ def relative_difference(expected, actual):
     return abs(expected - actual) / expected
 
 def test_eval(results):
-    perplexity_en_on_en = float(results["en_en"])  
-    perplexity_en_on_fr = float(results["en_fr"])  
-    perplexity_en_on_tl = float(results["en_tl"])  
-    perplexity_en_on_nl = float(results["en_nl"])  
+    perplexity_en_on_en = float(results["en_on_en"])  
+    perplexity_en_on_fr = float(results["en_on_fr"])  
+    perplexity_en_on_tl = float(results["en_on_tl"])  
+    perplexity_en_on_nl = float(results["en_on_nl"])  
 
     perplexities = [
         perplexity_en_on_en,

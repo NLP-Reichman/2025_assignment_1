@@ -21,6 +21,7 @@ def test_link():
     # Make sure link contains usp=sharing
     if "usp=sharing" not in link:
         return f"Link {link} doesn't seem to have share access"
+    return 1
     
 
 def test_preprocess(results):

@@ -21,10 +21,10 @@
       "points": 10
     },
     {
-      "name": "test_lm",
+      "name": "test_build_lm",
       "setup": "",
-      "run": "python3 auto_grader.py test_lm",
-      "input": "test_lm",
+      "run": "python3 auto_grader.py test_build_lm",
+      "input": "test_build_lm",
       "output": "1",
       "comparison": "exact",
       "timeout": 10,

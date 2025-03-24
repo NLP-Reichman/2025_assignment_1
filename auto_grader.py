@@ -29,7 +29,7 @@ def test_preprocess(results):
         return f"Vocab length is {results['vocab_length']}, expected 1804"
     return 1
 
-def test_lm(results):
+def test_build_lm(results):
     if results["english_2_gram_length"] != 748:
         return f"English 2-gram length is {results['english_2_gram_length']}, expected 748"
     if results["english_3_gram_length"] != 8239:
@@ -110,8 +110,8 @@ def main():
             result = test_link()
         case 'test_preprocess':
             result = test_preprocess(results["test_preprocess"])
-        case 'test_lm':
-            result = test_lm(results["test_lm"])
+        case 'test_build_lm':
+            result = test_build_lm(results["test_build_lm"])
         case 'test_eval':
             result = test_eval(results["test_eval"])
         case 'test_match':

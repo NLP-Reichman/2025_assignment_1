@@ -6,16 +6,16 @@ def test_preprocess():
         'vocab_length': len(preprocess()),
     }
 
-def test_lm():
+def test_build_lm():
     return {
-        'english_2_gram_length': len(lm('en', 2, True)),
-        'english_3_gram_length': len(lm('en', 3, True)),
-        'french_3_gram_length': len(lm('fr', 3, True)),
-        'spanish_3_gram_length': len(lm('es', 3, True)),
+        'english_2_gram_length': len(build_lm('en', 2, True)),
+        'english_3_gram_length': len(build_lm('en', 3, True)),
+        'french_3_gram_length': len(build_lm('fr', 3, True)),
+        'spanish_3_gram_length': len(build_lm('es', 3, True)),
     }
 
 def test_eval():
-    lm = lm('en', 3, True)
+    lm = build_lm('en', 3, True)
     return {
         'en_on_en': round(eval(lm, 'en', 3), 2),
         'en_on_fr': round(eval(lm, 'fr', 3), 2),
@@ -43,7 +43,7 @@ def test_generate():
         'french_3_gram': generate('fr', 3, "Je suis", 20, 5),
     }
 
-TESTS = [test_preprocess, test_lm, test_eval, test_match, test_generate]
+TESTS = [test_preprocess, test_build_lm, test_eval, test_match, test_generate]
 
 # Run tests and save results
 res = {}

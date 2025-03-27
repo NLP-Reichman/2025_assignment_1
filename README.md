@@ -3,7 +3,6 @@
 
 ## Your Implementation
 Please create a local copy of this template Colab's Notebook: https://colab.research.google.com/drive/1dsBboORX4kIYbve89AFGrg9lYoxOlN1H?usp=sharing
-# TODO: Place the link here
 
 The assignment's instructions are there; follow the notebook.
 

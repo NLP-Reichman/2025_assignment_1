@@ -2,7 +2,7 @@
 # Assignment 1 
 
 ## Your Implementation
-Please create a local copy of this template Colab's Notebook: https://colab.research.google.com/drive/1dsBboORX4kIYbve89AFGrg9lYoxOlN1H?usp=sharing
+Please create a local copy of [this template Colab's Notebook](https://colab.research.google.com/drive/1Py-fh9G4R5NruLc55T-diLOWE0xRvzXH?usp=sharing)
 
 The assignment's instructions are there; follow the notebook.
 

@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/a/eZP-BWL5)
+[Review Assignment Due Date](https://classroom.github.com/a/eZP-BWL5)
 # Assignment 1 
 
 ## Your Implementation
